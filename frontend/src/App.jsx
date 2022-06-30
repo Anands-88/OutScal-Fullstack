@@ -4,18 +4,16 @@ import './App.css'
 
 function App() {
   const [products, setProducts] = useState([])
-  // const [load,setLoad] = useState(15)
 
   const handleScroll = (e) => {
-    console.log("Hello")
     const {scrollHeight,scrollTop,clientHeight} = e.target;
     let dif = scrollHeight - scrollTop|0;
     const bottom = dif <= clientHeight+2;
-    console.log(dif, clientHeight+2,bottom)
+    
     if (bottom && products !== 100)
     {
       
-      axios.get(`https://fake-ecommerce-api.herokuapp.com/api/products`)
+      axios.get(`http://localhost:8888/products`)
       .then(({data})=>{
        
         setProducts([...products,...data])
@@ -24,13 +22,13 @@ function App() {
   }
 
   useEffect(()=>{
-    axios.get(`https://fake-ecommerce-api.herokuapp.com/api/products`)
+    axios.get(` http://localhost:8888/products`)
       .then(({data})=>{
         setProducts(data)
       })
     
   },[])
-  console.log(products.length)
+
   if(products.length === 0)
   {
     return <div></div>
@@ -42,9 +40,9 @@ function App() {
         <h1>Outscal Products</h1>
       </div>
       <div className = "scroll" onScroll={(e)=>{handleScroll(e)}}>
-        {products.map(({name,price,images})=>(
+        {products.map(({name,price,image})=>(
         <div className="element">
-           <img src={images[0]} alt={name} />
+           <img src={image} alt={name} />
            <h4>{name}</h4>
            <h5>{price}</h5>
         </div>
