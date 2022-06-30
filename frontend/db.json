@@ -1,0 +1,645 @@
+{
+    "products":[
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/headphones-1.jpg",
+            "id":1,
+            "name":"Best Studio Quality Headphones",
+            "price":499
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/guitar-1.jpg",
+            "id":2,
+            "name":"Acoustic-Electric Guitar",
+            "price":599
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/canon-dslr-1.jpg",
+            "id":3,
+            "name":"Canon EOS 1500D 24.1 Digital SLR Camera ",
+            "price":949
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/xbox-controller-1.jpg",
+            "id":4,
+            "name":"Xbox-Controller",
+            "price":929
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/128gb-memory-card-1.jpg",
+            "id":5,
+            "name":"Memory Card ",
+            "price":529
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/iphone-1.jpg",
+            "id":6,
+            "name":"Apple iPhone XR (512 GB)",
+            "price":999
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/quadcopter-1.jpg",
+            "id":7,
+            "name":"DJI Mavic Mini Nano Drone (Grey)",
+            "price":879
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/nike-shoes-1.jpg",
+            "id":8,
+            "name":"Nike Men's Running Shoes-6 UK/India (US 7)",
+            "price":889
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/sapphire-watch-1.jpg",
+            "id":9,
+            "name":" Men's Watch AE01 (Black Dial Silver Colored Strap)",
+            "price":919
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/men-shirt-1.jpg",
+            "id":10,
+            "name":"Symbol Men's Regular Fit Shirt",
+            "price":819
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/sunglasses-1.jpg",
+            "id":11,
+            "name":"Women's Round Fashion Goggle and Sunglasses",
+            "price":799
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/purse-1.jpg",
+            "id":12,
+            "name":"Women's Handbag (Black-Red)",
+            "price":859
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/red-dress-1.jpg",
+            "id":13,
+            "name":"Women's A-Line Knee Length Dress",
+            "price":729
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/pink-dress-1.jpg",
+            "id":14,
+            "name":"Women Western Stylish Off Shoulder Dress",
+            "price":629
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/silver-shoes-1.jpg",
+            "id":15,
+            "name":"Womens High-Heel Long Boots",
+            "price":549
+        },
+        
+        {   
+            "id":16,
+            "name":"Fjallraven - Foldsack No. 1 Backpack",
+            "price":209,
+            "image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+        },
+
+        {
+            "id":17,
+            "name":"Mens Casual Premium Slim Fit T-Shirts ",
+            "price":389,
+            "image":"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+        },
+
+        {
+            "id":18,
+            "name":"Mens Cotton Jacket",
+            "price":555,
+            "image":"https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+        },
+
+        {
+            "id":19,
+            "name":"Mens Casual Slim Fit",
+            "price":615,
+            "image":"https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+        },
+
+        {
+            "id":20,
+            "name":"John Hardy Women's Chain Bracelet",
+            "price":766,
+            "image":"https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+        },
+
+        {   "id":21,
+            "name":"Solid Gold Petite Micropave ",
+            "price":465,
+            "image":"https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        },
+
+        {
+            "id":23,
+            "name":"White Gold Plated Princess",
+            "price":874,
+            "image":"https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg"
+        },
+
+        {
+            "id":24,
+            "name":"Pierced Owl Rose Gold Plated Stainless Steel Double",
+            "price":340,
+            "image":"https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
+        },
+
+        {
+            "id":25,
+            "name":"WD 2TB Hard Drive - USB 3.0 ",
+            "price":578,
+            "image":"https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+        },
+
+        {
+            "id":26,
+            "name":"SanDisk SSD PLUS 1TB Internal SSD",
+            "price":687,
+            "image":"https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+        },
+
+        {
+            "id":27,
+            "name":"Silicon Power 256GB SSD 3D",
+            "price":492,
+            "image":"https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg"
+        },
+
+        {
+            "id":28,
+            "name":"WD 4TB External Hard Drive",
+            "price":678,
+           "image":"https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
+        },
+
+        {
+            "id":29,
+            "name":"Acer SB220Q IPS Ultra-Thin",
+            "price":987,
+           "image":"https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+        },
+
+        {
+            "id":31,
+            "name":"Samsung Curved Gaming Monitor ",
+            "price":999,
+           "image":"https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
+        },
+
+        {
+            "id":32,
+            "name":"BIYLACLESEN Women's Snowboard Jacket Winter Coats",
+            "price":456,
+           "image":"https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
+        },
+
+        {
+            "id":33,
+            "name":"Women's Hooded Faux Leather Jacket",
+            "price":329,
+            "image":"https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg"
+        },
+
+        {
+            "id":34,
+            "name":"Women Raincoats",
+            "price":289,
+           "image":"https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"
+        },
+
+        {
+            "id":35,
+            "name":"MBJ Women's Solid Short Sleeve",
+            "price":199,
+           "image":"https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"
+        },
+
+        {
+            "id":36,
+            "name":"Opna Women's Short Sleeve Moisture",
+            "price":197,
+           "image":"https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"
+        },
+
+        {
+            "id":37,
+            "name":"DANVOUY Womens T Shirt Casual Cotton Short",
+            "price":182,
+           "image":"https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"
+        },
+        
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/guitar-1.jpg",
+            "id":38,
+            "name":"Acoustic-Electric Guitar",
+            "price":629
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/canon-dslr-1.jpg",
+            "id":39,
+            "name":"Canon EOS 1500D 24.1 Digital SLR Camera ",
+            "price":899
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/xbox-controller-1.jpg",
+            "id":40,
+            "name":"Xbox-Controller",
+            "price":879
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/128gb-memory-card-1.jpg",
+            "id":41,
+            "name":"Memory Card ",
+            "price":569
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/iphone-1.jpg",
+            "id":42,
+            "name":"Apple iPhone XR (512 GB)",
+            "price":989
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/quadcopter-1.jpg",
+            "id":43,
+            "name":"DJI Mavic Mini Nano Drone (Grey)",
+            "price":879
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/nike-shoes-1.jpg",
+            "id":44,
+            "name":"Nike Men's Running Shoes-6 UK/India (US 7)",
+            "price":889
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/sapphire-watch-1.jpg",
+            "id":45,
+            "name":" Men's Watch AE01 (Black Dial Silver Colored Strap)",
+            "price":889
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/men-shirt-1.jpg",
+            "id":46,
+            "name":"Symbol Men's Regular Fit Shirt",
+            "price":789
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/sunglasses-1.jpg",
+            "id":47,
+            "name":"Women's Round Fashion Goggle and Sunglasses",
+            "price":769
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/purse-1.jpg",
+            "id":48,
+            "name":"Women's Handbag (Black-Red)",
+            "price":859
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/red-dress-1.jpg",
+            "id":49,
+            "name":"Women's A-Line Knee Length Dress",
+            "price":729
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/pink-dress-1.jpg",
+            "id":50,
+            "name":"Women Western Stylish Off Shoulder Dress",
+            "price":595
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/silver-shoes-1.jpg",
+            "id":51,
+            "name":"Womens High-Heel Long Boots",
+            "price":589
+        },
+        
+        {   
+            "id":52,
+            "name":"Fjallraven - Foldsack No. 1 Backpack",
+            "price":189,
+            "image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+        },
+
+        {
+            "id":53,
+            "name":"Mens Casual Premium Slim Fit T-Shirts ",
+            "price":319,
+            "image":"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+        },
+
+        {
+            "id":54,
+            "name":"Mens Cotton Jacket",
+            "price":505,
+            "image":"https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+        },
+
+        {
+            "id":55,
+            "name":"Mens Casual Slim Fit",
+            "price":715,
+            "image":"https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+        },
+
+        {
+            "id":56,
+            "name":"John Hardy Women's Chain Bracelet",
+            "price":766,
+            "image":"https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+        },
+
+        {   "id":57,
+            "name":"Solid Gold Petite Micropave ",
+            "price":565,
+            "image":"https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        },
+
+        {
+            "id":58,
+            "name":"White Gold Plated Princess",
+            "price":874,
+            "image":"https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg"
+        },
+
+        {
+            "id":59,
+            "name":"Pierced Owl Rose Gold Plated Stainless Steel Double",
+            "price":380,
+            "image":"https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
+        },
+
+        {
+            "id":60,
+            "name":"WD 2TB Hard Drive - USB 3.0 ",
+            "price":538,
+            "image":"https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+        },
+
+        {
+            "id":61,
+            "name":"SanDisk SSD PLUS 1TB Internal SSD",
+            "price":747,
+            "image":"https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+        },
+
+        {
+            "id":62,
+            "name":"Silicon Power 256GB SSD 3D",
+            "price":529,
+            "image":"https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg"
+        },
+
+        {
+            "id":63,
+            "name":"WD 4TB External Hard Drive",
+            "price":598,
+           "image":"https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
+        },
+
+        {
+            "id":64,
+            "name":"Acer SB220Q IPS Ultra-Thin",
+            "price":999,
+           "image":"https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+        },
+
+        {
+            "id":65,
+            "name":"Samsung Curved Gaming Monitor ",
+            "price":999,
+           "image":"https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
+        },
+
+        {
+            "id":66,
+            "name":"BIYLACLESEN Women's Snowboard Jacket Winter Coats",
+            "price":416,
+           "image":"https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/headphones-1.jpg",
+            "id":67,
+            "name":"Best Studio Quality Headphones",
+            "price":551
+        },
+
+        {
+            "id":68,
+            "name":"Women's Hooded Faux Leather Jacket",
+            "price":329,
+            "image":"https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg"
+        },
+
+        {
+            "id":69,
+            "name":"Women Raincoats",
+            "price":349,
+           "image":"https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"
+        },
+
+        {
+            "id":70,
+            "name":"MBJ Women's Solid Short Sleeve",
+            "price":219,
+           "image":"https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"
+        },
+
+        {
+            "id":71,
+            "name":"Opna Women's Short Sleeve Moisture",
+            "price":197,
+           "image":"https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"
+        },
+
+        {
+            "id":72,
+            "name":"DANVOUY Womens T Shirt Casual Cotton Short",
+            "price":192,
+           "image":"https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"
+        },
+
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/guitar-1.jpg",
+            "id":73,
+            "name":"Acoustic-Electric Guitar",
+            "price":619
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/xbox-controller-1.jpg",
+            "id":74,
+            "name":"Xbox-Controller",
+            "price":889
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/128gb-memory-card-1.jpg",
+            "id":75,
+            "name":"Memory Card ",
+            "price":600
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/iphone-1.jpg",
+            "id":76,
+            "name":"Apple iPhone XR (512 GB)",
+            "price":969
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/quadcopter-1.jpg",
+            "id":77,
+            "name":"DJI Mavic Mini Nano Drone (Grey)",
+            "price":899
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/nike-shoes-1.jpg",
+            "id":78,
+            "name":"Nike Men's Running Shoes-6 UK/India (US 7)",
+            "price":819
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/sapphire-watch-1.jpg",
+            "id":79,
+            "name":" Men's Watch AE01 (Black Dial Silver Colored Strap)",
+            "price":699
+        },
+        {
+            "id":80,
+            "name":"White Gold Plated Princess",
+            "price":874,
+            "image":"https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg"
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/sunglasses-1.jpg",
+            "id":81,
+            "name":"Women's Round Fashion Goggle and Sunglasses",
+            "price":699
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/purse-1.jpg",
+            "id":82,
+            "name":"Women's Handbag (Black-Red)",
+            "price":759
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/red-dress-1.jpg",
+            "id":83,
+            "name":"Women's A-Line Knee Length Dress",
+            "price":679
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/pink-dress-1.jpg",
+            "id":84,
+            "name":"Women Western Stylish Off Shoulder Dress",
+            "price":729
+        },
+        {
+            "image":"https://fake-ecommerce-api.herokuapp.com/img/silver-shoes-1.jpg",
+            "id":85,
+            "name":"Womens High-Heel Long Boots",
+            "price":649
+        },
+        
+        {   
+            "id":86,
+            "name":"Fjallraven - Foldsack No. 1 Backpack",
+            "price":319,
+            "image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+        },
+
+        {
+            "id":87,
+            "name":"Mens Casual Premium Slim Fit T-Shirts ",
+            "price":309,
+            "image":"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+        },
+
+        {
+            "id":88,
+            "name":"Mens Cotton Jacket",
+            "price":455,
+            "image":"https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+        },
+
+        {
+            "id":89,
+            "name":"Mens Casual Slim Fit",
+            "price":490,
+            "image":"https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+        },
+
+        {
+            "id":90,
+            "name":"John Hardy Women's Chain Bracelet",
+            "price":666,
+            "image":"https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+        },
+
+        {   "id":91,
+            "name":"Solid Gold Petite Micropave ",
+            "price":565,
+            "image":"https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        },
+        {
+            "id":92,
+            "name":"BIYLACLESEN Women's Snowboard Jacket Winter Coats",
+            "price":556,
+           "image":"https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
+        },
+
+        {
+            "id":93,
+            "name":"Women's Hooded Faux Leather Jacket",
+            "price":479,
+            "image":"https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg"
+        },
+
+        {
+            "id":94,
+            "name":"Pierced Owl Rose Gold Plated Stainless Steel Double",
+            "price":440,
+            "image":"https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
+        },
+
+        {
+            "id":95,
+            "name":"WD 2TB Hard Drive - USB 3.0 ",
+            "price":518,
+            "image":"https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+        },
+
+        {
+            "id":96,
+            "name":"SanDisk SSD PLUS 1TB Internal SSD",
+            "price":787,
+            "image":"https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+        },
+
+        {
+            "id":97,
+            "name":"Silicon Power 256GB SSD 3D",
+            "price":692,
+            "image":"https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg"
+        },
+
+        {
+            "id":98,
+            "name":"WD 4TB External Hard Drive",
+            "price":608,
+           "image":"https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
+        },
+
+        {
+            "id":99,
+            "name":"Acer SB220Q IPS Ultra-Thin",
+            "price":887,
+           "image":"https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+        },
+
+        {
+            "id":100,
+            "name":"Samsung Curved Gaming Monitor ",
+            "price":959,
+           "image":"https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
+        }
+     ]
+}
