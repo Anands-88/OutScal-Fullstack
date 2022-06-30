@@ -1,10 +1,12 @@
+
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
   const [products, setProducts] = useState([])
-
+  const [sort,setSort] = useState("asc")
+  
   const handleScroll = (e) => {
     const {scrollHeight,scrollTop,clientHeight} = e.target;
     let dif = scrollHeight - scrollTop|0;
@@ -13,7 +15,8 @@ function App() {
     if (bottom && products !== 100)
     {
       
-      axios.get(`http://localhost:8888/products`)
+      axios.get(`http://l
+ocalhost:8888/products`)
       .then(({data})=>{
        
         setProducts([...products,...data])
@@ -29,6 +32,15 @@ function App() {
     
   },[])
 
+  const sortFeature = () =>
+   axios.get(` http://localhost:8888/products?_sort=price&_order=${sort}`)
+      .then(({data})=>{
+        setProducts(data)
+      })
+}
+
+
+
   if(products.length === 0)
   {
     return <div></div>
@@ -36,8 +48,9 @@ function App() {
 
   return (
     <div className ="App">
-      <div>
+      <div style={{display:"flex"}}>
         <h1>Outscal Products</h1>
+        <button onClick={ click={()=>setSort(sort=="asc"?"desc":"asc", sortFeature}>Sort by {sort}</button>
       </div>
       <div className = "scroll" onScroll={(e)=>{handleScroll(e)}}>
         {products.map(({name,price,image})=>(
