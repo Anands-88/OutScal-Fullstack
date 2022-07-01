@@ -133,98 +133,98 @@
         },
 
         {
-            "id":23,
+            "id":22,
             "name":"White Gold Plated Princess",
             "price":874,
             "image":"https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg"
         },
 
         {
-            "id":24,
+            "id":23,
             "name":"Pierced Owl Rose Gold Plated Stainless Steel Double",
             "price":340,
             "image":"https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
         },
 
         {
-            "id":25,
+            "id":24,
             "name":"WD 2TB Hard Drive - USB 3.0 ",
             "price":578,
             "image":"https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
         },
 
         {
-            "id":26,
+            "id":25,
             "name":"SanDisk SSD PLUS 1TB Internal SSD",
             "price":687,
             "image":"https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
         },
 
         {
-            "id":27,
+            "id":26,
             "name":"Silicon Power 256GB SSD 3D",
             "price":492,
             "image":"https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg"
         },
 
         {
-            "id":28,
+            "id":27,
             "name":"WD 4TB External Hard Drive",
             "price":678,
            "image":"https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
         },
 
         {
-            "id":29,
+            "id":28,
             "name":"Acer SB220Q IPS Ultra-Thin",
             "price":987,
            "image":"https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
         },
 
         {
-            "id":31,
+            "id":29,
             "name":"Samsung Curved Gaming Monitor ",
             "price":999,
            "image":"https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
         },
 
         {
-            "id":32,
+            "id":30,
             "name":"BIYLACLESEN Women's Snowboard Jacket Winter Coats",
             "price":456,
            "image":"https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
         },
 
         {
-            "id":33,
+            "id":31,
             "name":"Women's Hooded Faux Leather Jacket",
             "price":329,
             "image":"https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg"
         },
 
         {
-            "id":34,
+            "id":32,
             "name":"Women Raincoats",
             "price":289,
            "image":"https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"
         },
 
         {
-            "id":35,
+            "id":33,
             "name":"MBJ Women's Solid Short Sleeve",
             "price":199,
            "image":"https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"
         },
 
         {
-            "id":36,
+            "id":34,
             "name":"Opna Women's Short Sleeve Moisture",
             "price":197,
            "image":"https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"
         },
 
         {
-            "id":37,
+            "id":35,
             "name":"DANVOUY Womens T Shirt Casual Cotton Short",
             "price":182,
            "image":"https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"
@@ -232,33 +232,46 @@
         
         {
             "image":"https://fake-ecommerce-api.herokuapp.com/img/guitar-1.jpg",
-            "id":38,
+            "id":36,
             "name":"Acoustic-Electric Guitar",
             "price":629
         },
         {
             "image":"https://fake-ecommerce-api.herokuapp.com/img/canon-dslr-1.jpg",
-            "id":39,
+            "id":37,
             "name":"Canon EOS 1500D 24.1 Digital SLR Camera ",
             "price":899
         },
         {
             "image":"https://fake-ecommerce-api.herokuapp.com/img/xbox-controller-1.jpg",
-            "id":40,
+            "id":38,
             "name":"Xbox-Controller",
             "price":879
         },
         {
             "image":"https://fake-ecommerce-api.herokuapp.com/img/128gb-memory-card-1.jpg",
-            "id":41,
+            "id":39,
             "name":"Memory Card ",
             "price":569
         },
         {
             "image":"https://fake-ecommerce-api.herokuapp.com/img/iphone-1.jpg",
-            "id":42,
+            "id":40,
             "name":"Apple iPhone XR (512 GB)",
             "price":989
+        },
+        {
+            "id":41,
+            "name":"MBJ Women's Solid Short Sleeve",
+            "price":159,
+           "image":"https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"
+        },
+
+        {
+            "id":42,
+            "name":"Opna Women's Short Sleeve Moisture",
+            "price":175,
+           "image":"https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"
         },
         {
             "image":"https://fake-ecommerce-api.herokuapp.com/img/quadcopter-1.jpg",
