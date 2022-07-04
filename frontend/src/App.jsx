@@ -17,7 +17,7 @@ function App() {
     {
       page.current+=1;
       let pg = page.current
-      axios.get(`http://localhost:8880/products?_page=${pg}&_limit=15`)
+      axios.get(`https://outscal-backend.herokuapp.com/product`)
       .then(({data})=>{
         setProducts([...products,...data])
       })
@@ -26,14 +26,14 @@ function App() {
 
   useEffect(()=>{
     let pg = page.current
-    axios.get(`http://localhost:8880/products?_page=${pg}&_limit=15`)
+    axios.get(`https://outscal-backend.herokuapp.com/product`)
       .then(({data})=>{
         setProducts(data)
       })
   },[])
 
   const sortFeature = () =>{
-   axios.get(`http://localhost:8880/products?_sort=price&_order=${sort}`)
+   axios.get(`https://outscal-backend.herokuapp.com/product`)
       .then(({data})=>{
         setProducts(data)
       })
@@ -42,7 +42,7 @@ function App() {
   const priceFilter = (e)=>{
     const price = e.target.value;
     const great = price-200;
-    axios.get(`http://localhost:8880/products?price_lte=${price}&price_gte=${great}`)
+    axios.get(`https://outscal-backend.herokuapp.com/product`)
       .then(({data})=>{
         setProducts(data)
       })
