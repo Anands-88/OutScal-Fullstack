@@ -22,7 +22,6 @@ router.get("",async(req,res)=>{
     let sort = req.query.sort
     let greater = filter - 200;
     
-    return res.send(filter == undefined)
     try{
         let product;
         if(filter == undefined && sort == undefined)
