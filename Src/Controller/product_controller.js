@@ -56,7 +56,7 @@ router.get("",async(req,res)=>{
     }
     catch(err)
     {
-        message = [filter,sort]
+        message = [filter == undefined,filter,sort != undefined,sort]
         return res.send({err,message})
     }
 })
