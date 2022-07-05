@@ -19,9 +19,9 @@ function App() {
     {
       page.current+=1;
       let pg = page.current
-      axios.get(`https://outscal-backend.herokuapp.com/product?page=${pg}`)
+      axios.get(`https://outscal-backend.herokuapp.com/product?page=${pg}&filter=${filter.current}&sort=${sort}`)
       .then(({data})=>{
-        setProducts([...products,...data])
+        setProducts([...products,...data.product])
       })
     }
   }
@@ -29,7 +29,6 @@ function App() {
   useEffect(()=>{
     axios.get(`https://outscal-backend.herokuapp.com/product`)
       .then(({data})=>{
-        console.log(data)
         setProducts(data.product)
       })
   },[])
@@ -38,8 +37,7 @@ function App() {
     console.log(sort,filter);
    axios.get(`https://outscal-backend.herokuapp.com/product?filter=${filter.current}&sort=${sort}`)
       .then(({data})=>{
-        console.log(data.message)
-        // setProducts(data)
+        setProducts(data.product)
       })
   }
 
@@ -47,7 +45,7 @@ function App() {
     filter.current = e.target.value;
     axios.get(`https://outscal-backend.herokuapp.com/product?filter=${filter.current}&sort=${sort}`)
       .then(({data})=>{
-        setProducts(data)
+        setProducts(data.product)
       })
   }
 
