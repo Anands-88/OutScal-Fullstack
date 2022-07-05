@@ -29,7 +29,8 @@ function App() {
   useEffect(()=>{
     axios.get(`https://outscal-backend.herokuapp.com/product`)
       .then(({data})=>{
-        setProducts(data)
+        console.log(data)
+        // setProducts(data)
       })
   },[])
 

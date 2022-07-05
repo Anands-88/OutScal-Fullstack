@@ -22,20 +22,20 @@ router.get("",async(req,res)=>{
     let sort = req.query.sort
     let greater = filter - 200;
     
-    return res.send(`Filter ${filter}`)
+    return res.send(filter == undefined)
     try{
         let product;
-        if(filter === undefined && sort === undefined)
+        if(filter == undefined && sort == undefined)
         {
             product = await Product.find().skip((page-1)*size).limit(size)
             .lean().exec();
         }
-        else if(filter === undefined && sort !== undefined)
+        else if(filter == undefined && sort != undefined)
         {
             product = await Product.find().skip((page-1)*size).limit(size)
             .sort({"price":sort}).lean().exec();
         }
-        else if(sort === undefined && filter !== undefined)
+        else if(sort == undefined && filter != undefined)
         {
             product = await Product.find({$and:[{price:{$lte:filter}},{price:{$gte:greater}}]})
             .skip((page-1)*size).limit(size).lean().exec();
