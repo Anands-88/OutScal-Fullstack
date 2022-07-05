@@ -24,33 +24,40 @@ router.get("",async(req,res)=>{
     
     try{
         let product;
+        let message;
+
         if(filter == undefined && sort == undefined)
         {
+            message = "Filter undefined and sort undefined"
             product = await Product.find().skip((page-1)*size).limit(size)
             .lean().exec();
         }
         else if(filter == undefined && sort != undefined)
         {
+            message = "Filter undefined and sort defined"
             product = await Product.find().skip((page-1)*size).limit(size)
             .sort({"price":sort}).lean().exec();
         }
         else if(sort == undefined && filter != undefined)
         {
+            message = "Filter defined and sort undefined"
             product = await Product.find({$and:[{price:{$lte:filter}},{price:{$gte:greater}}]})
             .skip((page-1)*size).limit(size).lean().exec();
         }
         else
         {
+            message = "Both defined"
             product = await Product.find({$and:[{price:{$lte:filter}},{price:{$gte:greater}}]})
             .skip((page-1)*size).limit(size)
             .sort({"price":sort}).lean().exec();
             
         }
-        return res.send(product)
+        return res.send({product,message})
     }
     catch(err)
     {
-        return res.send(err)
+        message = [filter,sort]
+        return res.send({err,message})
     }
 })
 

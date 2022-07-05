@@ -30,7 +30,7 @@ function App() {
     axios.get(`https://outscal-backend.herokuapp.com/product`)
       .then(({data})=>{
         console.log(data)
-        // setProducts(data)
+        setProducts(data)
       })
   },[])
 
@@ -38,7 +38,8 @@ function App() {
     console.log(sort,filter);
    axios.get(`https://outscal-backend.herokuapp.com/product?filter=${filter.current}&sort=${sort}`)
       .then(({data})=>{
-        setProducts(data)
+        console.log(data)
+        // setProducts(data)
       })
   }
 
