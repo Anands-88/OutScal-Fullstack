@@ -15,6 +15,9 @@ router.post("",async(req,res)=>{
 })
 
 router.get("",async(req,res)=>{
+
+    const page = req.query.page || 1;
+    const size = 15;
     let filter = req.query.filter 
     let sort = req.query.sort
     let greater = filter - 200;
@@ -23,20 +26,23 @@ router.get("",async(req,res)=>{
         let product;
         if(filter === undefined && sort === undefined)
         {
-            product = await Product.find().lean().exec();
+            product = await Product.find().skip((page-1)*size).limit(size)
+            .lean().exec();
         }
         else if(filter === undefined && sort !== undefined)
         {
-            product = await Product.find()
+            product = await Product.find().skip((page-1)*size).limit(size)
             .sort({"price":sort}).lean().exec();
         }
         else if(sort === undefined && filter !== undefined)
         {
             product = await Product.find({$and:[{price:{$lte:filter}},{price:{$gte:greater}}]})
+            .skip((page-1)*size).limit(size).lean().exec();
         }
         else
         {
             product = await Product.find({$and:[{price:{$lte:filter}},{price:{$gte:greater}}]})
+            .skip((page-1)*size).limit(size)
             .sort({"price":sort}).lean().exec();
             
         }

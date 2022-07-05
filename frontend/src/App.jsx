@@ -33,7 +33,7 @@ function App() {
   },[])
 
   const sortFeature = () =>{
-   axios.get(`https://outscal-backend.herokuapp.com/product`)
+   axios.get(`https://outscal-backend.herokuapp.com/product?sort=${sort}`)
       .then(({data})=>{
         setProducts(data)
       })
@@ -41,8 +41,7 @@ function App() {
 
   const priceFilter = (e)=>{
     const price = e.target.value;
-    const great = price-200;
-    axios.get(`https://outscal-backend.herokuapp.com/product`)
+    axios.get(`https://outscal-backend.herokuapp.com/product?filter=${price}&sort=${sort}`)
       .then(({data})=>{
         setProducts(data)
       })
