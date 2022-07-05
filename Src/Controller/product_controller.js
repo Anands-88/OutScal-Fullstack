@@ -21,7 +21,8 @@ router.get("",async(req,res)=>{
     let filter = req.query.filter 
     let sort = req.query.sort
     let greater = filter - 200;
-    console.log(sort,"Price","filter",filter)
+    
+    return res.send(`Filter ${filter}`)
     try{
         let product;
         if(filter === undefined && sort === undefined)

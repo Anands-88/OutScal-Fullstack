@@ -2,11 +2,13 @@
 import axios from 'axios'
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
+import { v4 as uuid } from 'uuid';
 
 function App() {
   const [products, setProducts] = useState([])
   const [sort,setSort] = useState("asc")
   const page = useRef(1)
+  const filter = useRef()
    
   const handleScroll = (e) => {
     const {scrollHeight,scrollTop,clientHeight} = e.target;
@@ -17,7 +19,7 @@ function App() {
     {
       page.current+=1;
       let pg = page.current
-      axios.get(`https://outscal-backend.herokuapp.com/product`)
+      axios.get(`https://outscal-backend.herokuapp.com/product?page=${pg}`)
       .then(({data})=>{
         setProducts([...products,...data])
       })
@@ -25,7 +27,6 @@ function App() {
   }
 
   useEffect(()=>{
-    let pg = page.current
     axios.get(`https://outscal-backend.herokuapp.com/product`)
       .then(({data})=>{
         setProducts(data)
@@ -33,15 +34,16 @@ function App() {
   },[])
 
   const sortFeature = () =>{
-   axios.get(`https://outscal-backend.herokuapp.com/product?sort=${sort}`)
+    console.log(sort,filter);
+   axios.get(`https://outscal-backend.herokuapp.com/product?filter=${filter.current}&sort=${sort}`)
       .then(({data})=>{
         setProducts(data)
       })
   }
 
   const priceFilter = (e)=>{
-    const price = e.target.value;
-    axios.get(`https://outscal-backend.herokuapp.com/product?filter=${price}&sort=${sort}`)
+    filter.current = e.target.value;
+    axios.get(`https://outscal-backend.herokuapp.com/product?filter=${filter.current}&sort=${sort}`)
       .then(({data})=>{
         setProducts(data)
       })
@@ -68,13 +70,13 @@ function App() {
           
           <button onClick={()=> {
             page.current = 1; 
-            setSort(sort=="asc"?"desc":"asc");
+            setSort(sort ==="asc"?"desc":"asc");
             sortFeature()}
             }>Sort by {sort}</button>
         </div>
         <div className = "scroll" onScroll={(e)=>{handleScroll(e)}}>
-          {products.map(({name,price,image,id})=>(
-          <div  className="element">
+          {products?.map(({name,price,image,_id})=>(
+          <div className="element" key={uuid()}>
             <img src={image} alt={name} />
             <h4>{name}</h4>
             <h5>{price}</h5> 
